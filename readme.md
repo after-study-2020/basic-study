@@ -1,9 +1,3 @@
-<style>
-table {
-    width:100%;
-}
-</style>
-
 # 수호님 FE 스터디 - 방과 후 복습 스터디
 
 - 수호님 초보자를 위한 프론트엔드 스터디 6기
@@ -24,14 +18,14 @@ table {
 
 ### ✏️ 스터디 팀원들
 
-| 이름 & 닉네임                                                       |
-| ------------------------------------------------------------------- |
-| [baekCo](https://github.com/baekCode)                               |
-| [송창석](https://github.com/songcs0329)                             |
-| [박수정](https://github.com/twilight92)                             |
+| <div style="width: 100%">이름 & 닉네임</div>                 |
+| ------------------------------------------------------------ |
+| [baekCo](https://github.com/baekCode)                        |
+| [송창석](https://github.com/songcs0329)                      |
+| [박수정](https://github.com/twilight92)                      |
 | [함주현](https://github.com/orgs/after-study-2020/people/juhyunham) |
-| [원다경](https://github.com/won-dk)                                 |
-| [임혜경](https://github.com/hklim82)                                |
+| [원다경](https://github.com/won-dk)                          |
+| [임혜경](https://github.com/hklim82)                         |
 
 <br>
 
