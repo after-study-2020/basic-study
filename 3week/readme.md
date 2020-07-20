@@ -47,3 +47,33 @@ sum(100) // 1~100의 합 : 5050
 
 ### ✏️ 3주차 복습,
 
+1. var, const, let 의 차이를 설명해주세요.
+   고민해볼만한 것 : 왜 ES2015에서 const와 let 이 생겨났을까?
+
+2. if 문. 다음 결과 값을 작성하시고 왜 그렇게 생각하시는지 설명해주세요.
+
+```javascript
+const FIRST_CONDITION = 5;
+const SECOND_CONDITION = 3;
+const SET_NUMBER = 10;
+
+function foo(a, b) {
+  if (a > FIRST_CONDITION) {
+    if (a < SET_NUMBER) {
+      a = SET_NUMBER;
+      return a + b;
+    }
+    return a + b;
+  } else if (b > SECOND_CONDITION) {
+    return a + b;
+  } else {
+    return '조건에 맞지 않는 입력값입니다.';
+  }
+}
+
+console.log(foo(5, 3));
+console.log(foo(5, 5));
+console.log(foo(6, 3));
+console.log(foo(3, 5));
+console.log(foo(11, 3));
+```
