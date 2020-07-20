@@ -1,6 +1,6 @@
 # 방과 후 스터디 팀 Git 작성 방법
 
-### git 
+### git 브랜치 전략
 
 1. 먼저 git clone 을 합니다.
 
@@ -48,6 +48,30 @@ local : 본인의 상태
 
 github 리모트서버에 있는 최신 파일을 pull 받아서 local 에도 최신 파일로 변경하는 작업을 설명 하겠습니다.
 
+1. 먼저 master 브랜치로 이동해줍니다.
+
+   `git checkout master`
+
+2. master 브랜치 pull 을 받아옵니다.
+
+   `git pull origin master`
+
+3. 다시 개인 브랜치로 이동해줍니다.
+
+   `git checkout 개인브랜치`
+
+4. 개인브랜치에서 마스터 브랜치의 내용을 merge해줍니다.
+
+   `git merge master`
+
+5. 정상적으로 합쳐졌습니다. 추가된 내용을 git add 하여 올립니다.
+
+   `git add *`  스테이지 올림
+
+   `git commit -m 'merge에 관한 커밋내용 작성'`
+
+   `git push origin 개인브랜치`
+
 
 
 
@@ -61,5 +85,7 @@ github 리모트서버에 있는 최신 파일을 pull 받아서 local 에도 �
 - 개인 브랜치를 별도로 추가 하여 개인 브랜치에 작성을 합니다.
 
 - 개별적으로 master 브랜치를 개인 브랜치를 merge 하지 않습니다.
+
+- 개인 브랜치를 지우지 않고 계속 작성해주세요.
 
   
