@@ -60,6 +60,8 @@
 | [송창석](https://github.com/songcs0329)                             | 내가 작성한 코드들을 다른사람들이 보면 이해하기 쉽도록 작성하는것! 프로트엔드 이직!                                              |
 | [박수정](https://github.com/twilight92)                             | 1. 프론트엔드 개발에 대해 알아보기<br />2. 나의 코드를 논리적으로 설명할 줄 알기                                                 |
 | [함주현](https://github.com/orgs/after-study-2020/people/juhyunham) |                                                                                                                                  |
+| [원다경](https://github.com/won-dk)                                 |                                                                                                                                  |
+| [임혜경](https://github.com/hklim82)                                |                                                                                                                                  |
 
 > 별도의 스터디 내용을 Wiki로 정리
 
