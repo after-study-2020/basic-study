@@ -16,6 +16,7 @@
 | [함주현](https://github.com/orgs/after-study-2020/people/juhyunham) |
 | [원다경](https://github.com/won-dk)                                 |
 | [임혜경](https://github.com/hklim82)                                |
+| [김소희](https://github.com/shdyjk1025)                             |
 
 <br>
 
