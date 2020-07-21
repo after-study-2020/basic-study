@@ -17,7 +17,7 @@
 | [원다경](https://github.com/won-dk)                                 |          |
 | [임혜경](https://github.com/hklim82)                                |          |
 | [김소희](https://github.com/shdyjk1025)                             |          |
-| [정시원](https://github.com/cool-jung)                              |          |
+| [정시원](https://github.com/cool-jung)                              | cool     |
 
 <br>
 
