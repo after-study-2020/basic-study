@@ -4,7 +4,7 @@
 
 ### ✏️ 3주차 복습,
 
-1. var, const, let 의 차이를 설명해주세요.
+1. var, const, let 의 차이를 설명해주세요.  
    고민해볼만한 것 : 왜 ES2015에서 const와 let 이 생겨났을까?
 
 |       | 재선언 | 재할당 |
@@ -13,7 +13,7 @@
 | let   | :x:    | :o:    |
 | const | :x:    | :x:    |
 
-**var**
+#### **var**
 
 변수 선언을 여러번해도 에러없이 각기 다른 값이 출력 가능합니다.
 
@@ -59,37 +59,37 @@ console.log(foo(3, 5)); // 4. 8
 console.log(foo(11, 3)); // 5. 14
 ```
 
-1. 첫 번째 인자 5는 FIRST_CONDITION인 5보다 크지 않다. :no_good:
-   두 번째 인자 3은 SECOND_CONDITION인 3보다 크지 않다.:no_good:
+1. 첫 번째 인자 5는 FIRST_CONDITION인 5보다 크지 않다. :no_good:  
+   두 번째 인자 3은 SECOND_CONDITION인 3보다 크지 않다.:no_good:  
 
-   **따라서 어느 조건에도 맞지 않는 '조건에 맞지 않는 입력값입니다.'를 반환합니다.**
-
-   
-
-2. 첫 번째 인자 5는 FIRST_CONDITION인 5보다 크지 않다.:no_good:
-   두 번째 인자 5는 SECOND_CONDITION인 3보다 크다.:ok_woman:
-
-   **따라서 첫 번째 인자 5와 두 번째 인자 5를 더한 10을 반환합니다.**
+   **따라서 어느 조건에도 맞지 않는 '조건에 맞지 않는 입력값입니다.'를 반환합니다.**  
 
    
 
-3. 첫 번째 인자 6은 FIRST_CONDITION인 5보다 크다.:ok_woman:
-   첫 번째 인자 6은 SET_NUMBER인 10보다 작다.:ok_woman:
-   매개변수 a에 SET_NUMBER인 10을 재할당한다.
+2. 첫 번째 인자 5는 FIRST_CONDITION인 5보다 크지 않다.:no_good:  
+   두 번째 인자 5는 SECOND_CONDITION인 3보다 크다.:ok_woman:  
 
-   **따라서 재할당된 매개변수 a 10과 매개변수 두 번째인자 3의 합 13을 반환합니다.**
-
-   
-
-4. 첫 번째 인자 3는 FIRST_CONDITION인 5보다 크지 않다.:no_good:
-   두 번째 인자 5는 SECOND_CONDITION인 3보다 크다.:ok_woman:
-
-   **따라서 첫 번째 인자 5와 두 번째 인자 3의 합 8을 반환합니다.**
+   **따라서 첫 번째 인자 5와 두 번째 인자 5를 더한 10을 반환합니다. ** 
 
    
 
-5. 첫 번째 인자 11은 FIRST_CONDITION인 5보다 크다.:ok_woman:
-   첫 번째 인자 11은 SET_NUMBER인 10보다 작지 않다.:no_good:
+3. 첫 번째 인자 6은 FIRST_CONDITION인 5보다 크다.:ok_woman:  
+   첫 번째 인자 6은 SET_NUMBER인 10보다 작다.:ok_woman:  
+   매개변수 a에 SET_NUMBER인 10을 재할당한다.  
 
-   **따라서 첫 번째 인자 11과 두 번째 인자 3의 합 14를 반환합니다.**
+   **따라서 재할당된 매개변수 a 10과 매개변수 두 번째인자 3의 합 13을 반환합니다.**  
+
+   
+
+4. 첫 번째 인자 3는 FIRST_CONDITION인 5보다 크지 않다.:no_good:  
+   두 번째 인자 5는 SECOND_CONDITION인 3보다 크다.:ok_woman:  
+
+   **따라서 첫 번째 인자 5와 두 번째 인자 3의 합 8을 반환합니다. **  
+
+   
+
+5. 첫 번째 인자 11은 FIRST_CONDITION인 5보다 크다.:ok_woman:  
+   첫 번째 인자 11은 SET_NUMBER인 10보다 작지 않다.:no_good:  
+
+   **따라서 첫 번째 인자 11과 두 번째 인자 3의 합 14를 반환합니다. ** 
 
