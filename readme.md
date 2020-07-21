@@ -8,15 +8,16 @@
 
 ### ✏️ 스터디 팀원들
 
-| 이름                                                                |
-| ------------------------------------------------------------------- |
-| [baekCo](https://github.com/baekCode)                               |
-| [송창석](https://github.com/songcs0329)                             |
-| [박수정](https://github.com/twilight92)                             |
-| [함주현](https://github.com/orgs/after-study-2020/people/juhyunham) |
-| [원다경](https://github.com/won-dk)                                 |
-| [임혜경](https://github.com/hklim82)                                |
-| [김소희](https://github.com/shdyjk1025)                             |
+| 이름                                                                | 브랜치명 |
+| ------------------------------------------------------------------- | -------- |
+| [baekCo](https://github.com/baekCode)                               | master   |
+| [송창석](https://github.com/songcs0329)                             |          |
+| [박수정](https://github.com/twilight92)                             | sj-park  |
+| [함주현](https://github.com/orgs/after-study-2020/people/juhyunham) |          |
+| [원다경](https://github.com/won-dk)                                 |          |
+| [임혜경](https://github.com/hklim82)                                |          |
+| [김소희](https://github.com/shdyjk1025)                             |          |
+| [정시원](https://github.com/cool-jung)                              |          |
 
 <br>
 
