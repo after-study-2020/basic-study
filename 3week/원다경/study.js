@@ -13,9 +13,9 @@ reverseCountWhile(10, function(i){
 });
 
 //복습1 - for문
-function reverseCountFor(n, func){
+function reverseCountFor(reverseNum, func){
     
-    for(var i = n; i > 0; i--){
+    for(var i = reverseNum; i > 0; i--){
         func(i);
     };
 };
