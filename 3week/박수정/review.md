@@ -92,4 +92,34 @@ console.log(foo(11, 3)); // 5. 14
    첫 번째 인자 11은 SET_NUMBER인 10보다 작지 않다.:no_good:  
 
    :point_right: **첫 번째 인자 11과 두 번째 인자 3의 합 14를 반환합니다.** 
+   
+   
+   
+   ------
 
+
+3. 위 if 문이 읽기 쉬우셨나요? if 문의 뎁스가 많아지면 읽는것도 힘들고.. 그리고 else, else if를 사용하면서 미로찾기 같지않던가요?? 이것을 한번 리팩토링 해보세요! ㅎㅎ
+
+```javascript
+const FIRST_CONDITION = 5;
+const SECOND_CONDITION = 3;
+const SET_NUMBER = 10;
+
+function foo(a, b) {
+  if (a <= FIRST_CONDITION && b <= SECOND_CONDITION) {
+    return '조건에 맞지 않는 입력값입니다.';
+  }
+
+  if (a > FIRST_CONDITION && a < SET_NUMBER) {
+    a = SET_NUMBER;
+  }
+
+  return a + b;
+};
+
+console.log(foo(5, 3)); // 조건에 맞지 않는 입력값입니다.
+console.log(foo(5, 5)); // 10
+console.log(foo(6, 3)); // 13
+console.log(foo(3, 5)); // 8
+console.log(foo(11, 3)); // 14
+```
