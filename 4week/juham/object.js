@@ -1,7 +1,7 @@
 function Library(arr) {
     this.arr = arr;
     this.find = (target) => {
-        if (arr.indexOf(target) > -1) {
+        if (this.arr.includes(target)) {
             return target
         } else {
             return new Error(`cannot find your target`);
@@ -14,7 +14,7 @@ function Library(arr) {
         return this.arr;
     }
     this.delete = (target) => {
-        if (arr.indexOf(target) > -1) {
+        if (this.arr.includes(target)) {
             let myArr = this.arr;
             let removed = this.arr.splice(arr.indexOf(target), 1)
             return myArr;
