@@ -77,3 +77,5 @@ console.log(foo(6, 3));
 console.log(foo(3, 5));
 console.log(foo(11, 3));
 ```
+
+3. 위 if 문이 읽기 쉬우셨나요? if 문의 뎁스가 많아지면 읽는것도 힘들고.. 그리고 else, else if를 사용하면서 미로찾기 같지않던가요?? 이것을 한번 리팩토링 해보세요! ㅎㅎ
