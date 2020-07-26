@@ -7,13 +7,13 @@ function Library(arr) {
             return new Error(`cannot find your target`);
         }
     }
-    this.add = function(target) {
+    this.add = (target) => {
         return this.arr.push(target);
     }
-    this.list = function () {
+    this.list = () => {
         return this.arr;
     }
-    this.delete = function (target) {
+    this.delete = (target) => {
         if (arr.indexOf(target) > -1) {
             let myArr = this.arr;
             let removed = this.arr.splice(arr.indexOf(target), 1)
