@@ -106,5 +106,8 @@ fruitsPrice.apple = 2000
 fruitsPrice.apple // 첫번째로 바뀐 사과의 값 2000
 fruitsPrice.apple = 2500
 fruitsPrice['apple'] // 두번쨰로 바뀐 사과의 값 2500
+
+// 기존객체에 추가도 가능합니다.
+fruitsPrice.strawberry = 800
 ```
 
