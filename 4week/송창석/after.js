@@ -1,34 +1,9 @@
 function Library(list) {
-    
-    // this 사용
-    // this.booklist = list;
-    // this.find = (name) => {
-    //     const result = this.booklist.find(element => element === name);
-    //     if(result === undefined) {
-    //         return 'Error';
-    //     }
-    //     return result;
-    // }
-    // this.add = (name) => {
-    //     this.booklist.push(name);
-    //     return this.booklist;
-    // }
-    // this.list = () => {
-    //     return this.booklist;
-    // }
-    // this.delete = (name) => {
-    //     this.booklist.splice(this.booklist.indexOf(name),1);
-    //     return this.booklist;
-    // }
-    
     // return으로 객체반환
     return {
         find(name) {
             const result = list.find(element => element === name);
-            if(result === undefined) {
-                return 'Error';
-            }
-            return result;
+            return result === undefined ? 'Error' : result;
         },
         add(name) {
             list.push(name);
