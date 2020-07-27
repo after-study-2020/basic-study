@@ -16,6 +16,6 @@ const bookStore = new Library()
 bookStore.find('파이썬') // 파이썬 (없다면 에러처리~)
 bookStore.add('HTML정복') 
 bookStore.list() // bookList을 출력
-bookStore.delet('파이썬') // 파이썬 제거
+bookStore.delete('파이썬') // 파이썬 제거
 ```
 
