@@ -44,6 +44,7 @@
 - 1week : 수호님 스터디 오리엔테이션
 - 2week : 변수 & 함수
 - 3week : 변수선언방식과 조건문(if, switch) & 반복문(for, while)
+- 4week : 배열 & 객체
 
 <br>
 
