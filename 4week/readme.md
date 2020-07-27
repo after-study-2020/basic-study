@@ -7,28 +7,24 @@
 **아래를 구성하는 객체를 구현해 보세요.**
 
 ```javascript
-
-function Library() {
-  
-}
-const bookList = ['자바스크립트완전정복','파이썬','java의 정석']
-const bookStore = new Library()
-bookStore.find('파이썬') // 파이썬 (없다면 에러처리~)
-bookStore.add('HTML정복') 
-bookStore.list() // bookList을 출력
-bookStore.delete('파이썬') // 파이썬 제거
+function Library() {}
+const bookList = ['자바스크립트완전정복', '파이썬', 'java의 정석'];
+const bookStore = new Library();
+bookStore.find('파이썬'); // 파이썬 (없다면 에러처리~)
+bookStore.add('HTML정복');
+bookStore.list(); // bookList을 출력
+bookStore.delete('파이썬'); // 파이썬 제거
 ```
-
-
 
 ### ✏️ 4주차 복습,
 
-**아래의 내용을 정리해보세요.** 
+**아래의 내용을 정리해보세요.**
 
 1. 배열
    1. 배열의 개요
    2. 내장 함수
 2. 객체 (객체는 너무 딥하게 들어가시지마세요!)
+
    1. 객체의 개요
    2. 프로퍼티란?
    3. 메소드란?
@@ -62,15 +58,11 @@ person.eat()
 
 (번외문제는 너무 자세히 써드리지 않는것은 이문제의 의도를 파악하기 위함입니다. 근데 충분히 자세함)
 
-
-
-
-
 <br>
 
 <br>
 
-*객체 참고 사항*
+_객체 참고 사항_
 
 ```javascript
 /*
@@ -80,34 +72,33 @@ person.eat()
 아래와 같이 사과 바나나 키위의 가격들이 있습니다. 
 */
 const fruitsPrice = {
-  apple : 1000,
-  banana : 1200,
-  kiwi : 1500
-}
+  apple: 1000,
+  banana: 1200,
+  kiwi: 1500,
+};
 
 // 객체의 조회
-// "과일의 가격표"에서 사과의 가격을 알고싶다면? 
-fruitsPrice.apple 
-fruitsPrice['apple']
+// "과일의 가격표"에서 사과의 가격을 알고싶다면?
+fruitsPrice.apple;
+fruitsPrice['apple'];
 /*
 	이렇게 가격을 조회 할수 있다.
 	(두번째 조회법은 배열과 비슷하죠? ㅎㅎ 배열은 index로 조회, 객체는 키값으로 조회)
 */
 
-// 객체의 수정 
+// 객체의 수정
 // 과일의 가격표에서 사과의 가격을 수정하고 싶다면?
-fruitsPrice.apple = 2000
+fruitsPrice.apple = 2000;
 
 /*
 	사과의 가격이 처음엔 1000원이다가 2000으로 재정의하고 현재의 가격과 과거의 가격은 달라졌어요.
 	과일의 가격표의 상태값인 사과의 가격이 달라졌으니, 상태가 달라졌다 라고 할수있을것같습니다.
 */
 
-fruitsPrice.apple // 첫번째로 바뀐 사과의 값 2000
-fruitsPrice.apple = 2500
-fruitsPrice['apple'] // 두번쨰로 바뀐 사과의 값 2500
+fruitsPrice.apple; // 첫번째로 바뀐 사과의 값 2000
+fruitsPrice.apple = 2500;
+fruitsPrice['apple']; // 두번쨰로 바뀐 사과의 값 2500
 
 // 기존객체에 추가도 가능합니다.
-fruitsPrice.strawberry = 800
+fruitsPrice.strawberry = 800;
 ```
-
