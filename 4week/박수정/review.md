@@ -146,8 +146,8 @@ person.exercise(exerciseType.SQUAT); // undefined
 person.weight; // 90
 person.eat(foodType.RICE); // undefined
 person.weight; // 105
-person.eat("아무거나"); //Uncaught Error: 올바른 타입이 아닙니다.
-person.exercise("아무거나"); //Uncaught Error: 올바른 타입이 아닙니다.
+person.eat("아무거나"); // Uncaught Error: 올바른 타입이 아닙니다.
+person.exercise("아무거나"); // Uncaught Error: 올바른 타입이 아닙니다.
 ```
 
 (번외문제는 너무 자세히 써드리지 않는것은 이문제의 의도를 파악하기 위함입니다. 근데 충분히 자세함)
