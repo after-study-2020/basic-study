@@ -55,22 +55,14 @@ const person = {
     weight : 80,
     run : function(){
       // TODO :: 운동을 하는것, 나의 2키로씩 살이 빠진다.
-        weight = this.weight - 2;
-        return weight;
+        return this.weight - 2;
     },
     eat : function(){
       // TODO :: 먹는것, 나의 5키로씩 살이 찐다.
-      weight = this.weight + 5;
-      return weight;
+      return this.weight + 5;
     }
   }
 
-  /*질문입니다!!
-  this는..run, eat 함수 밖에 정의된 프로퍼티의 키값을
-  사용하려고 할 때 this를 붙이나요??
-  eat,run 함수 리턴데 this.weight 를 하니까 계산한 값이 아닌 80이 나와서요~
-  */
-  
   console.log(person.name);
   console.log(person.weight);
   console.log(person.run());
