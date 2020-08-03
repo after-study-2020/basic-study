@@ -29,7 +29,7 @@ foo()
 
 
 
-**ES6 클래스를 사용하여 기존의 객체를 리팩토링 해보세요.**
+**ES6 클래스를 사용하여 4주차 복습으로 낸 객체를 리팩토링 해보세요.**
 
 ```javascript
 const person = {
@@ -38,7 +38,7 @@ const person = {
   weight : 80,
   run : function(){
     // TODO :: 운동을 하는것, 나의 2키로씩 살이 빠진다.
-  }
+  },
   eat : function(){
     // TODO :: 먹는것, 나의 5키로씩 살이 찐다.
   }
