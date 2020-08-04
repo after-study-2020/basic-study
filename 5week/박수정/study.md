@@ -132,10 +132,30 @@ person.run()
 person.eat()
 
 
-class Person () {
-  //TODO
+class Person {
+     constructor() {
+        this.name = '홍길동';
+        this.age = 25;
+        this.weight = 80;
+    }
+    run() {
+        // TODO :: 운동을 하는것, 나의 2키로씩 살이 빠진다.
+        this.weight -= 2;
+    }
+    eat() {
+        // TODO :: 먹는것, 나의 5키로씩 살이 찐다.
+        this.weight += 5;
+    }
 }
 
+
+var person = new Person();
+person.name; // "홍길동"
+person.weight; // 80
+person.run(); // undefined
+person.weight; // 78
+person.eat(); // undefined
+person.weight; // 83
 ```
 
 
