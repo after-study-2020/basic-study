@@ -73,6 +73,7 @@
    출처
 
    - [호이스팅이란](https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html)
+   - [var를 사용할 때 발생하는 문제들](https://www.daleseo.com/js-var-issues/)
 
    - [Hoisting이란?](https://negabaro.github.io/archive/js-Hoisting)
 
