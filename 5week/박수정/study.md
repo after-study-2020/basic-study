@@ -133,7 +133,7 @@ person.eat()
 
 
 class Person {
-     constructor() {
+    constructor() {
         this.name = '홍길동';
         this.age = 25;
         this.weight = 80;
@@ -166,11 +166,24 @@ person.weight; // 83
 - filter 와 map 정도만 내장 매소드를 가지는 객체를 만들어보세요.
 
 ```javascript
-class Arr () {
-	
-  filter(){}
-  
-  map(){}
+class Arr {
+  filter(arr, cb) {
+      return arr.filter((v) => cb(v));
+  }
+
+  map(arr, cb) {
+      return arr.map((v) => cb(v));
+  }
 }
+
+const array01 = [4, 15, 377, 395, 400, 1024, 3000];
+const array02 = ['foo', 'hello', 'diamond', 'A'];
+const testArr = new Arr();
+
+testArr.filter(array01, (value) => value % 5 === 0);
+// [15, 395, 400, 3000]
+
+testArr.map(array02, (value) => value.length);
+// [3, 5, 7, 1]
 ```
 
