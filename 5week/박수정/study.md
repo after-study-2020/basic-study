@@ -6,7 +6,45 @@
 
 **아래의 내용을 정리해보세요.**
 
-1. 스코프란? 
+1. 스코프란? <br>
+
+   '변수가 영향을 미치는 범위' 혹은 '변수의 유효 범위'<br>
+
+   즉,  **'코드가 유효한 범위'**<br>
+
+   스코프엔 두 가지 종류가 있다.<br>
+
+   - 전역 스코프(global scope)
+
+     변수가 함수 바깥이나 중괄호 (`{}`) 바깥에 선언되었다면, **전역 스코프**에 정의된다
+
+   - 지역 스코프(local scope)
+
+     특정 부분에서만 사용할 수 있는 변수는 지역 스코프에 있다고 할 수 있다.<br>이런 변수들은 지역 변수라고 불린다.
+
+     자바스크립트에서는 두 가지의 지역 변수가 존재한다.
+
+     * 블록 스코프(block scope)
+
+       블록 스코프는 중괄호{}로 감싸진 범위<br>
+
+       if의 블록 {}, for의 블록 {}, function의 블록 {}. 이들 모두 블록 스코프라고 할 수 있다.
+
+     * 함수 스코프(function scope)
+
+       블록 스코프 중 function의 블록 {} 범위를 갖는 스코프
+
+   자바스크립트의 선언문 var는 함수 스코프 내에서 유효.
+
+   ES6에서 추가된 선언문 let, const는 블록 스코프 내에서 유효.
+
+   출처
+
+   - [자바스크립트 스코프와 클로저]([https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19](https://medium.com/@khwsc1/번역-자바스크립트-스코프와-클로저-javascript-scope-and-closures-8d402c976d19))
+   - [자바스크립트 스코프]([https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84scope](https://yuddomack.tistory.com/entry/자바스크립트-스코프scope))
+
+   
+
 2. 호이스팅이란? (호이스팅이 일어나면 단점생각해보기)
 
 
