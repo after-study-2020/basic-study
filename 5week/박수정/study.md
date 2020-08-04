@@ -82,19 +82,34 @@
 
 ```javascript
 var y = 'Hi'
-console.log(z)
+console.log(z) // 1. undefined
 function foo(){
-  console.log(y)
-  console.log(z)
+  console.log(y) // 3. Hi
+  console.log(z) // 4. undefined
   var z = 'World';
-  console.log(z)
+  console.log(z) // 5. World
 }
 var z = 'Hello'
-console.log(z)
+console.log(z) // 2. Hello
 foo()
 ```
 
+해석형 언어인 자바스크립트는 위에서 아래로 순차적으로 실행되기 때문에<br>
 
+가장 먼저 위에 있는 console.log(z) 실행.<br>
+
+다음 foo 함수 선언을 건너뛰고 console.log(z) 실행.<br>
+
+foo 함수 호출 시 함수 컨텍스트 생성.<br>
+
+컨텍스트 생성 시 컨텍스트 안의  변수객체(arguments, variable), **scope chain**, this가 생성<br>
+
+foo 내부에서 순서대로 <br>
+
+console.log(y) <br>
+console.log(z) <br>
+console.log(z) <br>
+이 실행된다.
 
 **ES6 클래스를 사용하여 4주차 복습으로 낸 객체를 리팩토링 해보세요.**
 
