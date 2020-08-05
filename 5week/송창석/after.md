@@ -54,24 +54,6 @@ foo() // 5. foo함수 실행
 **ES6 클래스를 사용하여 4주차 복습으로 낸 객체를 리팩토링 해보세요.**
 
 ```javascript
-const person = {
-  name : '홍길동',
-  age : 25,
-  weight : 80,
-  run : function(){
-    // TODO :: 운동을 하는것, 나의 2키로씩 살이 빠진다.
-  },
-  eat : function(){
-    // TODO :: 먹는것, 나의 5키로씩 살이 찐다.
-  }
-}
-
-person.name;
-person.weight;
-person.run()
-person.eat()
-
-
 class Person {
     // TODO
     constructor(name, age, weight) {
@@ -95,3 +77,38 @@ person1.run();
 console.log(person1);
 
 ```
+
+
+
+**ES6 클래스를 이용하여 Arr 클래스를 만들어보세요**.
+
+- 기존 자바스크립트 내장 객체인 Array와 동일합니다.
+- filter 와 map 정도만 내장 매소드를 가지는 객체를 만들어보세요.
+
+```javascript
+class Arr {
+    // 요소를 걸러서 true, false 반환
+    filter(list, cb) {
+        let result = [];
+        for(let i = 0; i < list.length; i++) {
+            const number = cb(list[i]);
+            if(number) result.push(number);
+        }
+        return result;
+    }
+    // 요소를 일괄적으로 변경
+    map(list, cb) {
+        let result = [];
+        for (let i = 0; i < list.length; i++) {
+            const strLength = cb(list[i]);
+            result.push(strLength);
+        }
+        return result;
+    }
+}
+
+const arr1 = [1,2,3,4,5,6];
+const arr2 = ['test', 'carousel', 'longer', 'A']
+const test = new Arr();
+console.log(test.filter(arr1, (item) => { return item % 2 === 0 ? item : false })); // [2, 4, 6]
+console.log(test.map(arr2, (str) => { return str.length })); // [4, 8, 6, 1]
