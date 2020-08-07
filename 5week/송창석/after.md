@@ -88,27 +88,32 @@ console.log(person1);
 ```javascript
 class Arr {
     // 요소를 걸러서 true, false 반환
-    filter(list, cb) {
+    constructor(numlist, strlist) {
+        this.numlist = numlist
+        this.strlist = strlist
+    }
+    filter(cb) {
         let result = [];
-        for(let i = 0; i < list.length; i++) {
-            const number = cb(list[i]);
+        for(let i = 0; i < this.numlist.length; i++) {
+            const number = cb(this.numlist[i]);
             if(number) result.push(number);
         }
         return result;
     }
     // 요소를 일괄적으로 변경
-    map(list, cb) {
+    map(cb) {
         let result = [];
-        for (let i = 0; i < list.length; i++) {
-            const strLength = cb(list[i]);
+        for (let i = 0; i < this.strlist.length; i++) {
+            const strLength = cb(this.strlist[i]);
             result.push(strLength);
         }
         return result;
     }
 }
 
-const arr1 = [1,2,3,4,5,6];
-const arr2 = ['test', 'carousel', 'longer', 'A']
-const test = new Arr();
-console.log(test.filter(arr1, (item) => { return item % 2 === 0 ? item : false })); // [2, 4, 6]
-console.log(test.map(arr2, (str) => { return str.length })); // [4, 8, 6, 1]
+const numArr = [1,2,3,4,5,6];
+const strArr = ['test', 'carousel', 'longer', 'A']
+const test = new Arr(numArr, strArr);
+
+console.log(test.filter((item) => { return item % 2 === 0 ? item : false })); // [2, 4, 6]
+console.log(test.map((str) => { return str.length })); // [4, 8, 6, 1]
